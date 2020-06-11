@@ -1,8 +1,14 @@
 # Demo Vagrant Ansible SSH 
 
 Importate:
-- Ter a chave ssh gerada na sua máquina e não ter criado nenhum outra vm com o mesmo ip, para evitar erros na execução do playbook.
 
+Ter a chave ssh gerada na sua máquina e não ter criado nenhuma outra vm com o mesmo ip, para evitar erros na execução do playbook.
+
+Caso não tenha a chave, basta executa o comando
+
+```
+ssh-keygen
+```
 
 ### Execute o comando
 
