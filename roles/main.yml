@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  remote_user: vagrant
+  gather_facts: no
+  pre_tasks:
+
+    - name: 'Atualizando o repo'
+      raw: 'yum update update'
+    - name: 'Instalando Pyhton'
+      raw: 'yum update install -y python'
+    - name: 'Instalando Pyhton3'
+      raw: 'yum update install -y python3'
+
+  roles:
+    - { role: install-docker, tags: ["install_docker_role"] }   
