@@ -15,7 +15,7 @@ Com a máquina criada, basta agora executar o playbook que precisar.
 ### Execute o comando (exemplo)
 
 ```
-ansible-playbook -i roles/hosts roles/hosts
+ansible-playbook -i roles/hosts roles/main.yml
 ```
 
 Este é apenas um exemplo, existe n formas de colocar inclusive o ip dentro do hosts de forma dinâmica, nesta caso está fixo.
