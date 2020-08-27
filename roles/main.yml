@@ -6,11 +6,11 @@
   pre_tasks:
 
     - name: 'Atualizando o repo'
-      raw: 'yum update update'
+      raw: 'yum update'
     - name: 'Instalando Pyhton'
-      raw: 'yum update install -y python'
+      raw: 'yum install -y python'
     - name: 'Instalando Pyhton3'
-      raw: 'yum update install -y python3'
+      raw: 'yum install -y python3'
 
   roles:
     - { role: install-docker, tags: ["install_docker_role"] }   
